@@ -72,28 +72,28 @@ include CMakeFiles/nigiwav.dir/flags.make
 CMakeFiles/nigiwav.dir/codegen:
 .PHONY : CMakeFiles/nigiwav.dir/codegen
 
-CMakeFiles/nigiwav.dir/src/mainB.c.obj: CMakeFiles/nigiwav.dir/flags.make
-CMakeFiles/nigiwav.dir/src/mainB.c.obj: C:/Users/Gamer/Downloads/rise-before-darkness\ copy/midiwav/src/mainB.c
-CMakeFiles/nigiwav.dir/src/mainB.c.obj: CMakeFiles/nigiwav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/nigiwav.dir/src/mainB.c.obj"
-	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nigiwav.dir/src/mainB.c.obj -MF CMakeFiles/nigiwav.dir/src/mainB.c.obj.d -o CMakeFiles/nigiwav.dir/src/mainB.c.obj -c "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c"
+CMakeFiles/nigiwav.dir/src/note_decoder.c.obj: CMakeFiles/nigiwav.dir/flags.make
+CMakeFiles/nigiwav.dir/src/note_decoder.c.obj: C:/Users/Gamer/Downloads/rise-before-darkness\ copy/midiwav/src/note_decoder.c
+CMakeFiles/nigiwav.dir/src/note_decoder.c.obj: CMakeFiles/nigiwav.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/nigiwav.dir/src/note_decoder.c.obj"
+	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nigiwav.dir/src/note_decoder.c.obj -MF CMakeFiles/nigiwav.dir/src/note_decoder.c.obj.d -o CMakeFiles/nigiwav.dir/src/note_decoder.c.obj -c "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/note_decoder.c"
 
-CMakeFiles/nigiwav.dir/src/mainB.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/nigiwav.dir/src/mainB.c.i"
-	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c" > CMakeFiles/nigiwav.dir/src/mainB.c.i
+CMakeFiles/nigiwav.dir/src/note_decoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/nigiwav.dir/src/note_decoder.c.i"
+	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/note_decoder.c" > CMakeFiles/nigiwav.dir/src/note_decoder.c.i
 
-CMakeFiles/nigiwav.dir/src/mainB.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nigiwav.dir/src/mainB.c.s"
-	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c" -o CMakeFiles/nigiwav.dir/src/mainB.c.s
+CMakeFiles/nigiwav.dir/src/note_decoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nigiwav.dir/src/note_decoder.c.s"
+	C:/msys64/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/note_decoder.c" -o CMakeFiles/nigiwav.dir/src/note_decoder.c.s
 
 # Object files for target nigiwav
 nigiwav_OBJECTS = \
-"CMakeFiles/nigiwav.dir/src/mainB.c.obj"
+"CMakeFiles/nigiwav.dir/src/note_decoder.c.obj"
 
 # External object files for target nigiwav
 nigiwav_EXTERNAL_OBJECTS =
 
-nigiwav.exe: CMakeFiles/nigiwav.dir/src/mainB.c.obj
+nigiwav.exe: CMakeFiles/nigiwav.dir/src/note_decoder.c.obj
 nigiwav.exe: CMakeFiles/nigiwav.dir/build.make
 nigiwav.exe: CMakeFiles/nigiwav.dir/linkLibs.rsp
 nigiwav.exe: CMakeFiles/nigiwav.dir/objects1.rsp

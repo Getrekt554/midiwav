@@ -1,4 +1,4 @@
 C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles/midiwav.dir
-C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles/nigiwav.dir
+C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles/decoder.dir
 C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles/edit_cache.dir
 C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles/rebuild_cache.dir

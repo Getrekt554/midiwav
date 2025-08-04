@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nigiwav.dir/src/mainB.c.obj"
-  "CMakeFiles/nigiwav.dir/src/mainB.c.obj.d"
+  "CMakeFiles/nigiwav.dir/src/note_decoder.c.obj"
+  "CMakeFiles/nigiwav.dir/src/note_decoder.c.obj.d"
   "libnigiwav.dll.a"
   "nigiwav.exe"
   "nigiwav.exe.manifest"

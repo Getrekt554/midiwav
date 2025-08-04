@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/b
 
 # The main recursive "all" target.
 all: CMakeFiles/midiwav.dir/all
-all: CMakeFiles/nigiwav.dir/all
+all: CMakeFiles/decoder.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/midiwav.dir/codegen
-codegen: CMakeFiles/nigiwav.dir/codegen
+codegen: CMakeFiles/decoder.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/midiwav.dir/clean
-clean: CMakeFiles/nigiwav.dir/clean
+clean: CMakeFiles/decoder.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,7 +88,7 @@ clean: CMakeFiles/nigiwav.dir/clean
 CMakeFiles/midiwav.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiwav.dir/build.make CMakeFiles/midiwav.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiwav.dir/build.make CMakeFiles/midiwav.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=1,2 "Built target midiwav"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=3,4 "Built target midiwav"
 .PHONY : CMakeFiles/midiwav.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +105,7 @@ midiwav: CMakeFiles/midiwav.dir/rule
 # codegen rule for target.
 CMakeFiles/midiwav.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiwav.dir/build.make CMakeFiles/midiwav.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target midiwav"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=3,4 "Finished codegen for target midiwav"
 .PHONY : CMakeFiles/midiwav.dir/codegen
 
 # clean rule for target.
@@ -114,36 +114,36 @@ CMakeFiles/midiwav.dir/clean:
 .PHONY : CMakeFiles/midiwav.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/nigiwav.dir
+# Target rules for target CMakeFiles/decoder.dir
 
 # All Build rule for target.
-CMakeFiles/nigiwav.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=3,4 "Built target nigiwav"
-.PHONY : CMakeFiles/nigiwav.dir/all
+CMakeFiles/decoder.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=1,2 "Built target decoder"
+.PHONY : CMakeFiles/decoder.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/nigiwav.dir/rule: cmake_check_build_system
+CMakeFiles/decoder.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nigiwav.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decoder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" 0
-.PHONY : CMakeFiles/nigiwav.dir/rule
+.PHONY : CMakeFiles/decoder.dir/rule
 
 # Convenience name for target.
-nigiwav: CMakeFiles/nigiwav.dir/rule
-.PHONY : nigiwav
+decoder: CMakeFiles/decoder.dir/rule
+.PHONY : decoder
 
 # codegen rule for target.
-CMakeFiles/nigiwav.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=3,4 "Finished codegen for target nigiwav"
-.PHONY : CMakeFiles/nigiwav.dir/codegen
+CMakeFiles/decoder.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target decoder"
+.PHONY : CMakeFiles/decoder.dir/codegen
 
 # clean rule for target.
-CMakeFiles/nigiwav.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/clean
-.PHONY : CMakeFiles/nigiwav.dir/clean
+CMakeFiles/decoder.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/clean
+.PHONY : CMakeFiles/decoder.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

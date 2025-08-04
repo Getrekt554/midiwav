@@ -3,7 +3,7 @@
 #include <string.h>
 
 int parse_note(const char* note) {
-    if (strcmp(note, "A3") == 0) return -12;
+    if (strcmp(note, "A2") == 0) return -12;
     else if (strcmp(note, "A2#") == 0 || strcmp(note, "B2b") == 0) return -11;
     else if (strcmp(note, "B2") == 0  || strcmp(note, "C2b") == 0) return -10;
     else if (strcmp(note, "B2#") == 0 || strcmp(note, "C2") == 0) return -9;
@@ -14,7 +14,7 @@ int parse_note(const char* note) {
     else if (strcmp(note, "E2#") == 0 || strcmp(note, "F2") == 0) return -4;
     else if (strcmp(note, "F2#") == 0 || strcmp(note, "G2b") == 0) return -3;
     else if (strcmp(note, "G2") == 0) return -2;
-    else if (strcmp(note, "G2#") == 0 || strcmp(note, "A3b") == 0) return -1;
+    else if (strcmp(note, "G2#") == 0 || strcmp(note, "A2b") == 0) return -1;
 
     else if (strcmp(note, "A3") == 0) return 0;
     else if (strcmp(note, "A3#") == 0 || strcmp(note, "B3b") == 0) return 1;
@@ -46,36 +46,36 @@ int parse_note(const char* note) {
     return -1;
 }
 
-int* decode_notes(char* notes_str, int* out_len) {
-    char* notes = strdup(notes_str);  
-    char* tok = strtok(notes, " ");
+int* decode_notes(const char* str) {
+    static const int MAX_NOTES = 4; // rigid
+    int* notes = malloc(MAX_NOTES * sizeof(int));
 
-    int capacity = 16;
-    int* ints = malloc(sizeof(int) * capacity);
-    int index = 0;
+    char buffer[256];
+    strncpy(buffer, str, sizeof(buffer));
+    buffer[sizeof(buffer) - 1] = '\0';
 
-    while (tok != NULL) {
-        if (index >= capacity) {
-            capacity *= 2;
-            ints = realloc(ints, sizeof(int) * capacity);
-        }
+    char* token = strtok(buffer, " ");
+    int i = 0;
 
-        ints[index++] = parse_note(tok);
-        tok = strtok(NULL, " ");
+    while (token != NULL && i < MAX_NOTES) {
+        notes[i++] = parse_note(token);
+        token = strtok(NULL, " ");
     }
 
-    free(notes);
-    *out_len = index;
-    return ints;
+    return notes;
 }
 
-int main() {
-    int len = 0;
-    int* notes = decode_notes("C3 E3b A3b C4", &len);
+int main(int argc, char* argv[]) {
+    
+    int len = atoi(argv[2]);
+    int* notes = decode_notes(argv[1]);
 
+    printf("\n{");
     for (int i = 0; i < len; i++) {
-        printf("%d\n", notes[i]);
+        printf("%d", notes[i]);
+        if (i < len - 1) printf(", ");
     }
+    printf("}\n");
 
     free(notes);
     return 0;

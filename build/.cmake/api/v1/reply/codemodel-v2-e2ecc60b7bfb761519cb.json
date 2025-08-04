@@ -40,16 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "midiwav::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-midiwav-Debug-63dc7565607dfa646bcb.json",
-					"name" : "midiwav",
+					"id" : "decoder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decoder-Debug-dff5e13fa30a7bb86077.json",
+					"name" : "decoder",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "nigiwav::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-nigiwav-Debug-d74c1730abfdebc415e4.json",
-					"name" : "nigiwav",
+					"id" : "midiwav::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-midiwav-Debug-63dc7565607dfa646bcb.json",
+					"name" : "midiwav",
 					"projectIndex" : 0
 				}
 			]

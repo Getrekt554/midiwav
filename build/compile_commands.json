@@ -7,8 +7,8 @@
 },
 {
   "directory": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build",
-  "command": "C:/msys64/mingw64/bin/gcc.exe   -g -o CMakeFiles/nigiwav.dir/src/mainB.c.obj -c \"C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c\"",
-  "file": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c",
-  "output": "CMakeFiles/nigiwav.dir/src/mainB.c.obj"
+  "command": "C:/msys64/mingw64/bin/gcc.exe   -g -o CMakeFiles/decoder.dir/src/note_decoder.c.obj -c \"C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/note_decoder.c\"",
+  "file": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/note_decoder.c",
+  "output": "CMakeFiles/decoder.dir/src/note_decoder.c.obj"
 }
 ]

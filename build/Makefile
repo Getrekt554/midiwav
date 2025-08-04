@@ -130,17 +130,17 @@ midiwav/fast:
 .PHONY : midiwav/fast
 
 #=============================================================================
-# Target rules for targets named nigiwav
+# Target rules for targets named decoder
 
 # Build rule for target.
-nigiwav: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nigiwav
-.PHONY : nigiwav
+decoder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decoder
+.PHONY : decoder
 
 # fast build rule for target.
-nigiwav/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/build
-.PHONY : nigiwav/fast
+decoder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/build
+.PHONY : decoder/fast
 
 src/mainA.obj: src/mainA.cpp.obj
 .PHONY : src/mainA.obj
@@ -166,29 +166,29 @@ src/mainA.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiwav.dir/build.make CMakeFiles/midiwav.dir/src/mainA.cpp.s
 .PHONY : src/mainA.cpp.s
 
-src/mainB.obj: src/mainB.c.obj
-.PHONY : src/mainB.obj
+src/note_decoder.obj: src/note_decoder.c.obj
+.PHONY : src/note_decoder.obj
 
 # target to build an object file
-src/mainB.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/src/mainB.c.obj
-.PHONY : src/mainB.c.obj
+src/note_decoder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/src/note_decoder.c.obj
+.PHONY : src/note_decoder.c.obj
 
-src/mainB.i: src/mainB.c.i
-.PHONY : src/mainB.i
+src/note_decoder.i: src/note_decoder.c.i
+.PHONY : src/note_decoder.i
 
 # target to preprocess a source file
-src/mainB.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/src/mainB.c.i
-.PHONY : src/mainB.c.i
+src/note_decoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/src/note_decoder.c.i
+.PHONY : src/note_decoder.c.i
 
-src/mainB.s: src/mainB.c.s
-.PHONY : src/mainB.s
+src/note_decoder.s: src/note_decoder.c.s
+.PHONY : src/note_decoder.s
 
 # target to generate assembly for a file
-src/mainB.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nigiwav.dir/build.make CMakeFiles/nigiwav.dir/src/mainB.c.s
-.PHONY : src/mainB.c.s
+src/note_decoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/src/note_decoder.c.s
+.PHONY : src/note_decoder.c.s
 
 # Help Target
 help:
@@ -198,14 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... decoder"
 	@echo "... midiwav"
-	@echo "... nigiwav"
 	@echo "... src/mainA.obj"
 	@echo "... src/mainA.i"
 	@echo "... src/mainA.s"
-	@echo "... src/mainB.obj"
-	@echo "... src/mainB.i"
-	@echo "... src/mainB.s"
+	@echo "... src/note_decoder.obj"
+	@echo "... src/note_decoder.i"
+	@echo "... src/note_decoder.s"
 .PHONY : help
 
 
