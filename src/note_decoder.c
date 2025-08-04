@@ -42,8 +42,23 @@ int parse_note(const char* note) {
     else if (strcmp(note, "G4") == 0) return 10;
     else if (strcmp(note, "G4#") == 0 || strcmp(note, "A4b") == 0) return 11;
     else if (strcmp(note, "A5") == 0) return 12;
+    else if (strcmp(note, "X") == 0) return -5000;
+
+    else if (strcmp(note, "A5#") == 0 || strcmp(note, "B5b") == 0) return 13;
+    else if (strcmp(note, "B5") == 0  || strcmp(note, "C5b") == 0) return 14;
+    else if (strcmp(note, "B5#") == 0 || strcmp(note, "C5") == 0) return 15;
+    else if (strcmp(note, "C5#") == 0 || strcmp(note, "D5b") == 0) return 16;
+    else if (strcmp(note, "D5") == 0) return 17;
+    else if (strcmp(note, "D5#") == 0 || strcmp(note, "E5b") == 0) return 18;
+    else if (strcmp(note, "E5")  == 0 || strcmp(note, "F5b") == 0) return 19;
+    else if (strcmp(note, "E5#") == 0 || strcmp(note, "F5") == 0) return 20;
+    else if (strcmp(note, "F5#") == 0 || strcmp(note, "G5b") == 0) return 21;
+    else if (strcmp(note, "G5") == 0) return 22;
+    else if (strcmp(note, "G5#") == 0 || strcmp(note, "A5b") == 0) return 23;
+    else if (strcmp(note, "A6") == 0) return 24;
+    else if (strcmp(note, "X") == 0) return -5000;
     
-    return -1;
+    return 0;
 }
 
 int* decode_notes(const char* str) {
