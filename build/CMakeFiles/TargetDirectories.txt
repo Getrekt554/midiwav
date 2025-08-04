@@ -1,0 +1,3 @@
+C:/Users/gtrek/Documents/GitHub/midiwav/build/CMakeFiles/mainA.dir
+C:/Users/gtrek/Documents/GitHub/midiwav/build/CMakeFiles/edit_cache.dir
+C:/Users/gtrek/Documents/GitHub/midiwav/build/CMakeFiles/rebuild_cache.dir
