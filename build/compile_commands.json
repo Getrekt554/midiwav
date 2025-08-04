@@ -1,8 +1,14 @@
 [
 {
-  "directory": "C:/Users/gtrek/Documents/GitHub/midiwav/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\midiwav.dir\\src\\mainA.cpp.obj -c C:\\Users\\gtrek\\Documents\\GitHub\\midiwav\\src\\mainA.cpp",
-  "file": "C:/Users/gtrek/Documents/GitHub/midiwav/src/mainA.cpp",
+  "directory": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe   -g -o CMakeFiles/midiwav.dir/src/mainA.cpp.obj -c \"C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainA.cpp\"",
+  "file": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainA.cpp",
   "output": "CMakeFiles/midiwav.dir/src/mainA.cpp.obj"
+},
+{
+  "directory": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build",
+  "command": "C:/msys64/mingw64/bin/gcc.exe   -g -o CMakeFiles/nigiwav.dir/src/mainB.c.obj -c \"C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c\"",
+  "file": "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/src/mainB.c",
+  "output": "CMakeFiles/nigiwav.dir/src/mainB.c.obj"
 }
 ]

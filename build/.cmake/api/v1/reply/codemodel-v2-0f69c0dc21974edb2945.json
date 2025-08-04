@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "midiwav",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "midiwav::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-midiwav-Debug-0b6d3f02c209e76eb458.json",
+					"jsonFile" : "target-midiwav-Debug-63dc7565607dfa646bcb.json",
 					"name" : "midiwav",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nigiwav::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nigiwav-Debug-d74c1730abfdebc415e4.json",
+					"name" : "nigiwav",
 					"projectIndex" : 0
 				}
 			]
@@ -49,12 +58,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/gtrek/Documents/GitHub/midiwav/build",
-		"source" : "C:/Users/gtrek/Documents/GitHub/midiwav"
+		"build" : "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav/build",
+		"source" : "C:/Users/Gamer/Downloads/rise-before-darkness copy/midiwav"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 7
+		"minor" : 8
 	}
 }

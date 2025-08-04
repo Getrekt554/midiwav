@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "midiwav.exe"
+			"path" : "nigiwav.exe"
 		},
 		{
-			"path" : "midiwav.pdb"
+			"path" : "nigiwav.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -41,14 +41,14 @@
 					"fragment" : "-g"
 				}
 			],
-			"language" : "CXX",
+			"language" : "C",
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "midiwav::@6890427a1f51a3e7e1df",
+	"id" : "nigiwav::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -58,18 +58,14 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
-		"language" : "CXX"
+		"language" : "C"
 	},
-	"name" : "midiwav",
-	"nameOnDisk" : "midiwav.exe",
+	"name" : "nigiwav",
+	"nameOnDisk" : "nigiwav.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +86,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/mainA.cpp",
+			"path" : "src/mainB.c",
 			"sourceGroupIndex" : 0
 		}
 	],
