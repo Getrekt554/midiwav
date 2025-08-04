@@ -47,8 +47,17 @@ waveform clar_wavef;
 song leib;
 
 void init_player() {
-    clar_wavef.freq = {220, 660, 1100, 1540, 1980, 2420, 2860};
-    clar_wavef.volume = {1.0, 0.6, 0.3, 0.15, 0.07, 0.03, 0.015};
+clar_wavef.freq = {
+    440, 880, 1320, 1760, 2200, 2640, 3080, 3520,
+    3960, 4400, 4840, 5280, 5720, 6160, 6600, 7030, 7470
+};
+
+clar_wavef.volume = {
+    1.00, 0.44, 0.28, 0.20, 0.16, 0.13, 0.10, 0.08,
+    0.07, 0.056, 0.050, 0.045, 0.040, 0.035, 0.031, 0.028, 0.025
+};
+
+
 
     leib.notes = {3,6,11,15,11,6,3,6,11,15,11,6,3,7,13,15,13,7,-5000,7,13,15,13,7,3,6,12,15,12,6,4,6,12,15,12,6,3};
     leib.len = {0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143,0.2143};
@@ -67,7 +76,7 @@ void write_wav(std::ofstream& outFile) {
         for (int j = 0; j < sample_rate * leib.len.at(i); ++j) {
             double t = j / static_cast<double>(sample_rate);
 
-            double wave = play_instrument(clar_wavef, leib.notes.at(i), 0.11, t);
+            double wave = play_instrument(clar_wavef, leib.notes.at(i)-12, 0.11, t);
             
             short sample = static_cast<short>(32767 * wave);
             write_sample(outFile, sample);
