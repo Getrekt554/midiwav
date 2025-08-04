@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mainA
+# Target rules for targets named midiwav
 
 # Build rule for target.
-mainA: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mainA
-.PHONY : mainA
+midiwav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 midiwav
+.PHONY : midiwav
 
 # fast build rule for target.
-mainA/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainA.dir\build.make CMakeFiles/mainA.dir/build
-.PHONY : mainA/fast
+midiwav/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\midiwav.dir\build.make CMakeFiles/midiwav.dir/build
+.PHONY : midiwav/fast
 
 src/mainA.obj: src/mainA.cpp.obj
 .PHONY : src/mainA.obj
 
 # target to build an object file
 src/mainA.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainA.dir\build.make CMakeFiles/mainA.dir/src/mainA.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\midiwav.dir\build.make CMakeFiles/midiwav.dir/src/mainA.cpp.obj
 .PHONY : src/mainA.cpp.obj
 
 src/mainA.i: src/mainA.cpp.i
@@ -141,7 +141,7 @@ src/mainA.i: src/mainA.cpp.i
 
 # target to preprocess a source file
 src/mainA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainA.dir\build.make CMakeFiles/mainA.dir/src/mainA.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\midiwav.dir\build.make CMakeFiles/midiwav.dir/src/mainA.cpp.i
 .PHONY : src/mainA.cpp.i
 
 src/mainA.s: src/mainA.cpp.s
@@ -149,7 +149,7 @@ src/mainA.s: src/mainA.cpp.s
 
 # target to generate assembly for a file
 src/mainA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainA.dir\build.make CMakeFiles/mainA.dir/src/mainA.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\midiwav.dir\build.make CMakeFiles/midiwav.dir/src/mainA.cpp.s
 .PHONY : src/mainA.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... mainA
+	@echo ... midiwav
 	@echo ... src/mainA.obj
 	@echo ... src/mainA.i
 	@echo ... src/mainA.s

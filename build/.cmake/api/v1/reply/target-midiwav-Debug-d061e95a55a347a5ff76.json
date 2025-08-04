@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "mainA.exe"
+			"path" : "midiwav.exe"
 		},
 		{
-			"path" : "mainA.pdb"
+			"path" : "midiwav.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,11 +13,15 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"C:/vcpkg/installed/x64-windows/share/raylib/raylib-config.cmake"
 		],
 		"nodes" : 
 		[
@@ -27,8 +31,30 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 8,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 63,
+				"parent" : 4
 			}
 		]
 	},
@@ -41,6 +67,14 @@
 					"fragment" : "-g"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/vcpkg/installed/x64-windows/include"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -48,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "mainA::@6890427a1f51a3e7e1df",
+	"id" : "midiwav::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -62,14 +96,24 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "C:\\vcpkg\\installed\\x64-windows\\lib\\raylib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\vcpkg\\installed\\x64-windows\\lib\\raylib.lib",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "mainA",
-	"nameOnDisk" : "mainA.exe",
+	"name" : "midiwav",
+	"nameOnDisk" : "midiwav.exe",
 	"paths" : 
 	{
 		"build" : ".",
