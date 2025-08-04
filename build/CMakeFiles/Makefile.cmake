@@ -20,9 +20,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/FindPkgConfig.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -46,8 +43,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeRCCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeSystem.cmake"
-  "C:/vcpkg/installed/x64-windows/share/raylib/raylib-config-version.cmake"
-  "C:/vcpkg/installed/x64-windows/share/raylib/raylib-config.cmake"
   )
 
 # The corresponding makefile is:

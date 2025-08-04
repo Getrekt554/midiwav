@@ -72,7 +72,6 @@ CMakeFiles/midiwav.dir/codegen:
 .PHONY : CMakeFiles/midiwav.dir/codegen
 
 CMakeFiles/midiwav.dir/src/mainA.cpp.obj: CMakeFiles/midiwav.dir/flags.make
-CMakeFiles/midiwav.dir/src/mainA.cpp.obj: CMakeFiles/midiwav.dir/includes_CXX.rsp
 CMakeFiles/midiwav.dir/src/mainA.cpp.obj: C:/Users/gtrek/Documents/GitHub/midiwav/src/mainA.cpp
 CMakeFiles/midiwav.dir/src/mainA.cpp.obj: CMakeFiles/midiwav.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gtrek\Documents\GitHub\midiwav\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/midiwav.dir/src/mainA.cpp.obj"
@@ -95,8 +94,6 @@ midiwav_EXTERNAL_OBJECTS =
 
 midiwav.exe: CMakeFiles/midiwav.dir/src/mainA.cpp.obj
 midiwav.exe: CMakeFiles/midiwav.dir/build.make
-midiwav.exe: C:/vcpkg/installed/x64-windows/lib/raylib.lib
-midiwav.exe: C:/vcpkg/installed/x64-windows/lib/raylib.lib
 midiwav.exe: CMakeFiles/midiwav.dir/linkLibs.rsp
 midiwav.exe: CMakeFiles/midiwav.dir/objects1.rsp
 midiwav.exe: CMakeFiles/midiwav.dir/link.txt

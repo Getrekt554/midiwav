@@ -4,7 +4,7 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/midiwav.dir/includes_CXX.rsp
+CXX_INCLUDES = 
 
 CXX_FLAGS = -g
 
