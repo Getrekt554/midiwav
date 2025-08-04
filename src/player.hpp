@@ -52,29 +52,31 @@ wave_types str_to_wavef(const std::string& str) {
 double set_wave(waveform wavef, double v, double t) {
     if (wavef.freq.size() != wavef.volume.size()) {std::cerr << "vectors don't match!\n"; exit(1);}
 
-    double temp_wave;
+    double temp_wave = 0.0;
     for (int i=0; i < wavef.freq.size(); i++) {
         switch (wavef.type)
         {
         case SINE:
-            temp_wave += v * (wavef.volume[i] * sin(2.0 * PI * (wavef.freq[i]) * (t)));
-            return temp_wave;
+            temp_wave += v * (wavef.volume[i] * sin(2.0 * PI * (wavef.freq[i]) * t));
             break;
         case SQUARE:
-            temp_wave += v * (wavef.volume[i] * sin(2.0 * PI * (wavef.freq[i]) * (t)));
-            if (temp_wave >= 0.0) {temp_wave = 1.0;} else if (temp_wave < 0.0) {temp_wave = -1.0;}
-            return temp_wave;
+            {
+                double s = sin(2.0 * PI * (wavef.freq[i]) * t);
+                temp_wave += v * (wavef.volume[i] * (s >= 0.0 ? 1.0 : -1.0));
+            }
             break;
         case TRIANGLE:
-            temp_wave += v * (wavef.volume[i] * (4.0 * abs((wavef.freq[i] * t) - ceil((wavef.freq[i] * t) - (1.0/2.0))) - 1.0));
-            return temp_wave;
+            {
+                double phase = wavef.freq[i] * t;
+                double tri = 2.0 * fabs(2.0 * (phase - floor(phase + 0.5))) - 1.0;
+                temp_wave += v * (wavef.volume[i] * tri);
+            }
             break;
         default:
             break;
-        };
+        }
     }
-
-    return 0.0;
+    return temp_wave;
 }
 
 double play_instrument(waveform wavef, double note, double volume, double t) {

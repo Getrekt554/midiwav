@@ -2,7 +2,7 @@
 
 int main() {
 
-    init_player("leib");
+    init_player("chords");
 
     std::ofstream outFile("out.wav", std::ios::binary);
     if (!outFile.is_open()) {
