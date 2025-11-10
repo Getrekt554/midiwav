@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\midiwav.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\midiwav.dir/objects.a @CMakeFiles\midiwav.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\midiwav.dir/objects.a -Wl,--no-whole-archive -o midiwav.exe -Wl,--out-implib,libmidiwav.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\midiwav.dir\linkLibs.rsp
